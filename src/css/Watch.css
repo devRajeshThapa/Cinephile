@@ -1,0 +1,65 @@
+.watchContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.videoWrapper{
+    height: 500px;
+    width: 1000px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.nowPlaying{
+    font-size: 25px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.nowPlaying span{
+    font-weight: 300;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1170px) {
+    .nowPlaying{
+        font-size: 20px;
+    }
+    .videoWrapper{
+        width: 800px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 850px) {
+    .videoWrapper{
+        width: 600px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 650px) {
+    .nowPlaying{
+        font-size: 17px;
+    }
+    .videoWrapper{
+        width: 100%;
+        height: 200px;
+    }
+}
+

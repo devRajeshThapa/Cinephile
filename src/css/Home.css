@@ -1,0 +1,9 @@
+:root{
+  --primary-color: #84eab3;
+}
+
+.container{
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,5 @@
+1.Nav link hightlight when visited
+2.Add social links in footer
+3.Implement loading UI
+4.Default poster when poster is null
+5.Custom video player
