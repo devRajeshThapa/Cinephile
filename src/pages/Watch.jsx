@@ -44,8 +44,8 @@ const Watch = () => {
             fetch(url2, options2)
                 .then(res => res.json())
                 .then(json => {
-                    setKey(json.results.filter((item)=>{
-                        return item.type == "Trailer" || item.type == "Teaser";
+                    setKey(json.results.filter((item) => {
+                        return item.type == "Trailer" || item.type == "Teaser" || item.type == "Opening Credits" || item.type == "Featurette" || item.type == "Behind the Scenes" || item.type == "Bloopers";
                     })[0].key);
                 })
                 .catch(err => console.error('error:' + err));
@@ -79,8 +79,8 @@ const Watch = () => {
             fetch(url2, options2)
                 .then(res => res.json())
                 .then(json => {
-                    setKey(json.results.filter((item)=>{
-                        return item.type == "Trailer" || item.type == "Teaser";
+                    setKey(json.results.filter((item) => {
+                        return item.type == "Trailer" || item.type == "Teaser" || item.type == "Opening Credits" || item.type == "Featurette" || item.type == "Behind the Scenes" || item.type == "Bloopers";
                     })[0].key);
                 })
                 .catch(err => console.error('error:' + err));
