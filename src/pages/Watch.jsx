@@ -45,7 +45,7 @@ const Watch = () => {
                 .then(res => res.json())
                 .then(json => {
                     setKey(json.results.filter((item) => {
-                        return item.type == "Opening Creadits" || item.type == "Teaser"  || item.type == "Trailer";
+                        return item.type == "Trailer"  || item.type == "Teaser";
                     })[0].key);
                 })
                 .catch(err => console.error('error:' + err));
@@ -80,7 +80,7 @@ const Watch = () => {
                 .then(res => res.json())
                 .then(json => {
                     setKey(json.results.filter((item) => {
-                        return item.type == "Opening Creadits" || item.type == "Teaser"  || item.type == "Trailer";
+                        return item.type == "Trailer"  || item.type == "Teaser";
                     })[0].key);
                 })
                 .catch(err => console.error('error:' + err));
@@ -103,7 +103,7 @@ const Watch = () => {
                                         key ?
                                             <iframe src={`https://www.youtube.com/embed/${key}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                             :
-                                            null
+                                            <div>:No media found related to the topic "{data.name || data.original_name || data.title || data.original_title}"</div>
                                     }
                                 </div>
                             </div>
