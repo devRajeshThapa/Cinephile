@@ -45,7 +45,7 @@ const Watch = () => {
                 .then(res => res.json())
                 .then(json => {
                     setKey(json.results.filter((item) => {
-                        return item.type == "Trailer"  || item.type == "Teaser";
+                        return item.type == "Trailer";
                     })[0].key);
                 })
                 .catch(err => console.error('error:' + err));
@@ -80,7 +80,7 @@ const Watch = () => {
                 .then(res => res.json())
                 .then(json => {
                     setKey(json.results.filter((item) => {
-                        return item.type == "Trailer"  || item.type == "Teaser";
+                        return item.type == "Trailer";
                     })[0].key);
                 })
                 .catch(err => console.error('error:' + err));
