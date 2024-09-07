@@ -3,3 +3,4 @@
 3.Implement loading UI
 4.Default poster when poster is null
 5.Custom video player
+6.Carousel
